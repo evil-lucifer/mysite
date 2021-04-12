@@ -1,0 +1,253 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  font-family: Montserrat, sans-serif;
+  background-color:#DEB887;
+}
+
+.delUser{
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  color:#a78456;
+  border: 0;
+}
+
+#profile{
+  background-color: rgb(255, 248, 220);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+  padding: 0.2em 0.5em;
+  text-align: center;
+}
+
+.profile,#register,#authorize{
+  background-color: rgb(255, 248, 220);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+  padding: 0.2em 0.5em;
+  text-align: center;
+}
+#meet,#redactor,#user {
+  background-color: rgb(255, 248, 220);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+  padding: 0.2em 0.5em;
+}
+
+h1{
+  text-align: center;
+}
+#add{
+  font-weight: bolder;
+  text-align: center;
+  background-color: #a78456 ;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 99%;
+}
+
+
+.link{
+  display: flex;
+  width: 95%;
+  background-color: #a78456 ;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+}
+
+.profile a, #profile a  {
+  color:rgb(255, 248, 220);
+  font-weight: bolder ;
+  border-radius: 10px;
+  background-color: #a78456 ;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.profile a {
+  margin-top: 8px;
+}
+
+#register a, #authorize a,#redactor a{
+  font-weight: bolder;
+  color: #a78456 ;
+}
+
+.back {
+  color:#a78456 ;
+  font-weight: bolder;
+}
+
+ .button, #authorize button, #register button, #redactor button, #meet button, .verif-btn,.saveimg {
+  color: rgb(255, 248, 220);
+  background-color: #a78456 ;
+  font-weight: bolder;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  border: 0;
+  margin-bottom: 8px;
+ }
+ .logout{
+   margin-bottom: 5px;
+ }
+ .profile label,#register label, #authorize label,#redactor label {
+   font-size: 20px;
+   text-align: center;
+ }
+
+ h1 {
+   margin-bottom: 5px;
+   margin-top: 5px;
+ }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+table{
+  margin-bottom: 10px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  background: #a78456;
+  color: white;
+}
+
+td {
+  background:white ;
+}
+
+p {
+  margin: 5px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: unset;
+  border-bottom: 2px solid #e3e3e3;
+  outline: none;
+}
+
+label {
+  padding:10px ;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+
+}
+
+.modal .del ,.modal .add,.modal .update {
+  background-color: rgb(255, 248, 220);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  }
+
+.modal h1{
+  font-size: 35px;
+
+}
+
+.modal .del button,.modal .add button,.modal .update button {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  background-color: #a78456;
+  transition: all .2s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.modal .del button:hover {
+  background-color: #a78456;
+}
+
+
+#add{
+  color:rgb(255, 248, 220);
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+#meet .delete,#meet .upd{
+  color:rgb(255, 248, 220);
+  background-color: #a78456;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.error {
+  border-bottom: 2px solid #ff4332;
+}
+
+.msg {
+  border: 2px solid #ffa908;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.none {
+  display: none;
+}
